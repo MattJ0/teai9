@@ -1,5 +1,11 @@
-Wczytaj do aplikacji 1000 obiektów pobranych z https://www.mockaroo.com/ (z formatu CSV)
-Stwórz metodę, która będzie zapisywała wszystkie elementy do lokalnej bazy danych.
-Stwórz aspekt, który będzie nasłuchiwać metodę i w momencie startu włączy licznik startu, a po zakończeniu operacji odczytanie zostanie czas wykonania operacji.
-Zrób do samo dla operacji wczytywania danych z bazy danych (bez wyświetlania ich, bo to może spowodować przekłamanie wyniku). Odnotuj wynik odczytu.
-Zrealizuj to dla relacyjnej bazy danych i nierelacyjnej bazy danych. Porównaj wyniki, napisz wnioski, podziel się nimi na grupie – zobaczymy komu co udało się osiągnąć ?
+291/5000
+Application that loads a CSV file with 1 record or 1000 records.
+Aspect measures the execution time of the method marked with the @LogExecutionTime annotation:
+- save in the database
+- reading from the database
+- removal from the database
+
+Tested local databases:
+- PostgreSQGL (Docker) + JPA (Hibernate)
+- MongoDB
+- Redis (Docker)
