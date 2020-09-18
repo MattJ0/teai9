@@ -1,4 +1,3 @@
-291/5000
 Application that loads a CSV file with 1 record or 1000 records.
 Aspect measures the execution time of the method marked with the @LogExecutionTime annotation:
 - save in the database
